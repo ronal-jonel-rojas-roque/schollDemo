@@ -1,0 +1,121 @@
+.schedule-container {
+    margin: 20px;
+    flex-grow: 1;
+    overflow-x: auto;
+    position: relative;
+}
+
+.time-grid {
+    font-size: 1rem;
+    min-width: 300px;
+}
+
+.day {
+    border-bottom: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.title-day {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0;
+}
+
+.data-day {
+    display: grid;
+    background: transparent;
+    border: 1px solid #b6b3b3;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    max-height: 60vh;
+    overflow-y: auto;
+    overflow-x: auto;
+    position: relative;
+}
+
+.alert-day {
+    background: rgb(22, 21, 21);
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.day.expanded .data-day {
+    display: block;
+}
+
+.day-content {
+    font-size: 1rem;
+    max-width: 300px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+.head-day-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.courseName {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: cursive;
+    font-weight: 700;
+}
+
+.Detalles {
+    background: red;
+    text-align: center;
+    width: 65px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.day-schedule {
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(170, 185, 187);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.coincidencias-schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+    top: 3%;
+    z-index: 1;
+    position: absolute;
+    right: 55%;
+}
+
+.coincidencias-schedule-data {
+    background-color: rgb(177, 177, 204);
+    min-width: 150px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    margin-top: 5px;
+    position: absolute;
+} 
+
+.close-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}

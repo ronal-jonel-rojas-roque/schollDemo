@@ -1,0 +1,65 @@
+.title-users-actives {
+  color: white;
+}
+
+.container-home {
+  display: flex;
+  width: 100%;
+}
+
+.posts-container-home {
+  width: 70%;
+}
+
+.users-container-home {
+  width: 30%;
+  height: 100vh;
+  margin-right: 20px;
+  background: black;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container-home {
+    display: grid;
+    width: 100%;
+  }
+
+  .posts-container-home {
+    width: 100%;
+  }
+
+  .users-container-home {
+    width: 300px;
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: 12vh;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .toggle-users-btn {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10%;
+    background: blue;
+    padding: 5px;
+    color: white;
+    font-size: .8rem;
+    font-weight: 600;
+    border-radius: 10px;
+    transform: translateX(-50%);
+  }
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}

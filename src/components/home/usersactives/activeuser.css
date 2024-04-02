@@ -1,0 +1,70 @@
+.container-user-active {
+    width: 100%;
+    text-align: center;
+    background: black;
+    min-height: 50vh;
+    height: 100vh;
+    border-radius: 10px;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.user-active-div {
+    width: 100%;
+}
+
+.user-active {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.image-user {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.name-user-active {
+    padding-left: 30px;
+    font-size: .8rem;
+    color: white;
+}
+
+.title-user {
+    color: white;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.highlight-text {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.you-text {
+    font-weight: 800;
+    font-style: italic;
+    color: #008000;
+}
+
+@media screen and (max-width: 1200px) {
+    .container-user-active {
+        display: block;
+    }
+
+    .user-active {
+        max-width: 250px;
+    }
+
+    .state-user {
+        width: 20px;
+    }
+
+    .state-user-active {
+        display: none;
+    }
+}
